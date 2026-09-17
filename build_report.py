@@ -1,6 +1,6 @@
 """
 build_report.py
-Generates Amazon_Rating_Prediction_Report.docx
+Generates YashwanthRajKS_AmazonRatingPrediction_Report.docx
 - Cover page, Abstract, Objective, Dataset description, Cleaning steps,
   EDA (with screenshots), Methodology, Results, UI walkthrough, Conclusion
 """
@@ -121,7 +121,7 @@ doc.add_paragraph()
 
 p3 = doc.add_paragraph()
 p3.alignment = WD_ALIGN_PARAGRAPH.CENTER
-r3 = p3.add_run("Prepared by: Himanshu")
+r3 = p3.add_run("Prepared by: Yashwanth Raj KS")
 r3.font.size = Pt(13)
 r3.font.bold = True
 
@@ -584,6 +584,6 @@ add_body(doc,
 # ═══════════════════════════════════════════════════════════════════
 # SAVE
 # ═══════════════════════════════════════════════════════════════════
-report_path = "Amazon_Rating_Prediction_Report.docx"
+report_path = "YashwanthRajKS_AmazonRatingPrediction_Report.docx"
 doc.save(report_path)
 print(f"[OK] Report saved: {report_path}")
